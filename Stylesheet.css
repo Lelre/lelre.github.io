@@ -951,7 +951,6 @@ nav{
   }
   .nav-links li:hover .drop-menu,
   .nav-links li:hover .mega-box{
-    transition: all 0.3s ease;
     opacity: 1;
     visibility: visible;
   }
