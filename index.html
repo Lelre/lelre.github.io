@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="Stylesheet.css" />
+  <link rel="stylesheet" href="style.css" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -16,7 +16,13 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </div>
 
-  <section class="navbar">
+
+
+  <div id="gototop">
+    <a href="#topo"><i class="fas fa-chevron-up"></i></a>
+  </div>
+
+  <section class="navbar" id="topo">
     <div class="nav-wrapper">
       <div class="nav-logo">
         <a href="www.finom.edu.br">
@@ -29,7 +35,7 @@
         <div class="three"></div>
       </div>
 
-      <div class="nav-menu">
+  <div class="nav-menu">
         <ul>
           <li>
             <a href="#ini">Início</a>
@@ -47,8 +53,8 @@
             <a href="#con">Contato</a>
           </li>
         </ul>
-      </div>
-    </div>
+  </div>
+  </div>
   </section>
 
   <section class="slider">
@@ -247,209 +253,405 @@
       </div>
   
       <div class="flex-wrapper">
-        <div class="grid-card-wrapper">
-          <!-- ADMINISTRAÇÃO -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Administração</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 4 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+        <button class="accordion"><div class="accordion-title"><i class="fas fa-university accordion-icon accordion-icon"></i>Cursos da FINOM</div><div class="accordioncursos">5 Cursos</div></button>
+        <div class="panel grid-card-wrapper"> <!-- OUTROS -->
+            <!-- ADMINISTRAÇÃO -->
+            <div>
+              <label>
+                <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+                <div class="flip-card">
+                  <div class="front">
+                    <div class="front-header">
+                      <span>
+                        <h1>Administração</h1>
+                      </span>
+                      <span>
+                        <h1><i class="far fa-clock"></i> 4 anos</h1>
+                      </span>
+    
+                      <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                      <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                    </div>
+    
+                    <div class="front-footer">
+                      <h1>Leia mais</h1>
+                      <ul>
+                        <li>
+                          <h3>
+                            <i class="fas fa-users icone-front-footer"></i><br />50
+                            Vagas
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
+    
+                  <div class="back">
+                    <div>
+                      <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                    </div>
+                    <h2>Sobre o curso:</h2>
+                    <p>
+                      O curso propõe uma abordagem investigativa dos conteúdos, de
+                      modo a envolver os acadêmicos no estudo crítico do saber
+                      jurídico instituído.<br /><br />A grade curricular contempla
+                      um conjunto de conteúdos de formação geral, um eixo
+                      tecnológico-profissionalizante e um eixo
+                      prático-operacional.<br /><br />As práticas jurídicas
+                      (judiciais e extrajudiciais) compõem um espaço de extrema
+                      importância na integralização curricular. O Curso de Direito
+                      da Finom oferece aos seus graduandos a oportunidade de
+                      estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                      ainda mais o aprendizado da sala de aula com o exercício da
+                      advocacia.
+                    </p>
+                    <h2><a href="#">Página do Curso</a></h2>
                   </div>
                 </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+              </label>
+            </div>
+            <!-- AGRONOMIA -->
+            <div>
+              <label>
+                <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+                <div class="flip-card">
+                  <div class="front">
+                    <div class="front-header">
+                      <span>
+                        <h1>Agronomia</h1>
+                      </span>
+                      <span>
+                        <h1><i class="far fa-clock"></i> 5 anos</h1>
+                      </span>
+    
+                      <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                      <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                    </div>
+    
+                    <div class="front-footer">
+                      <h1>Leia mais</h1>
+                      <ul>
+                        <li>
+                          <h3>
+                            <i class="fas fa-users icone-front-footer"></i><br />50
+                            Vagas
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
+    
+                  <div class="back">
+                    <div>
+                      <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                    </div>
+                    <h2>Sobre o curso:</h2>
+                    <p>
+                      O curso propõe uma abordagem investigativa dos conteúdos, de
+                      modo a envolver os acadêmicos no estudo crítico do saber
+                      jurídico instituído.<br /><br />A grade curricular contempla
+                      um conjunto de conteúdos de formação geral, um eixo
+                      tecnológico-profissionalizante e um eixo
+                      prático-operacional.<br /><br />As práticas jurídicas
+                      (judiciais e extrajudiciais) compõem um espaço de extrema
+                      importância na integralização curricular. O Curso de Direito
+                      da Finom oferece aos seus graduandos a oportunidade de
+                      estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                      ainda mais o aprendizado da sala de aula com o exercício da
+                      advocacia.
+                    </p>
+                    <h2><a href="#">Página do Curso</a></h2>
+                  </div>
                 </div>
-              </div>
-            </label>
+              </label>
+            </div>
+            <!-- DIREITO --> 
+            <div>
+              <label>
+                <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+                <div class="flip-card">
+                  <div class="front">
+                    <div class="front-header">
+                      <span>
+                        <h1>Direito</h1>
+                      </span>
+                      <span>
+                        <h1><i class="far fa-clock"></i> 5 anos</h1>
+                      </span>
+    
+                      <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                      <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                    </div>
+    
+                    <div class="front-footer">
+                      <h1>Leia mais</h1>
+                      <ul>
+                        <li>
+                          <h3>
+                            <i class="fas fa-users icone-front-footer"></i><br />50
+                            Vagas
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+    
+                  <div class="back">
+                    <div>
+                      <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                    </div>
+                    <h2>Sobre o curso:</h2>
+                    <p>
+                      O curso propõe uma abordagem investigativa dos conteúdos, de
+                      modo a envolver os acadêmicos no estudo crítico do saber
+                      jurídico instituído.<br /><br />A grade curricular contempla
+                      um conjunto de conteúdos de formação geral, um eixo
+                      tecnológico-profissionalizante e um eixo
+                      prático-operacional.<br /><br />As práticas jurídicas
+                      (judiciais e extrajudiciais) compõem um espaço de extrema
+                      importância na integralização curricular. O Curso de Direito
+                      da Finom oferece aos seus graduandos a oportunidade de
+                      estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                      ainda mais o aprendizado da sala de aula com o exercício da
+                      advocacia.
+                    </p>
+                    <h2><a href="#">Página do Curso</a></h2>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <!-- GEOLOGIA -->
+            <div>
+    <label>
+      <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+      <div class="flip-card">
+        <div class="front">
+          <div class="front-header">
+            <span>
+              <h1>Geologia</h1>
+            </span>
+            <span>
+              <h1><i class="far fa-clock"></i> 5 anos</h1>
+            </span>
+
+            <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+            <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
           </div>
-  
-          <!-- AGRONOMIA -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Agronomia</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
+
+          <div class="front-footer">
+            <h1>Leia mais</h1>
+            <ul>
+              <li>
+                <h3>
+                  <i class="fas fa-users icone-front-footer"></i><br />50
+                  Vagas
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                </h3>
+              </li>
+            </ul>
           </div>
-  
-          <!-- DIREITO -->
+        </div>
+
+        <div class="back">
           <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Direito</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
+            <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
           </div>
-  
-          <!-- BIOMEDICINA -->
+          <h2>Sobre o curso:</h2>
+          <p>
+            O curso propõe uma abordagem investigativa dos conteúdos, de
+            modo a envolver os acadêmicos no estudo crítico do saber
+            jurídico instituído.<br /><br />A grade curricular contempla
+            um conjunto de conteúdos de formação geral, um eixo
+            tecnológico-profissionalizante e um eixo
+            prático-operacional.<br /><br />As práticas jurídicas
+            (judiciais e extrajudiciais) compõem um espaço de extrema
+            importância na integralização curricular. O Curso de Direito
+            da Finom oferece aos seus graduandos a oportunidade de
+            estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+            ainda mais o aprendizado da sala de aula com o exercício da
+            advocacia.
+          </p>
+          <h2><a href="#">Página do Curso</a></h2>
+        </div>
+      </div>
+    </label>
+            </div>
+            <!-- CIÊNCIAS CONTÁBEIS -->
+            <div>
+    <label>
+      <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+      <div class="flip-card">
+        <div class="front">
+          <div class="front-header">
+            <span>
+              <h1>Ciências Contábeis</h1>
+            </span>
+            <span>
+              <h1><i class="far fa-clock"></i> 5 anos</h1>
+            </span>
+
+            <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+            <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+          </div>
+
+          <div class="front-footer">
+            <h1>Leia mais</h1>
+            <ul>
+              <li>
+                <h3>
+                  <i class="fas fa-users icone-front-footer"></i><br />50
+                  Vagas
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="back">
           <div>
+            <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+          </div>
+          <h2>Sobre o curso:</h2>
+          <p>
+            O curso propõe uma abordagem investigativa dos conteúdos, de
+            modo a envolver os acadêmicos no estudo crítico do saber
+            jurídico instituído.<br /><br />A grade curricular contempla
+            um conjunto de conteúdos de formação geral, um eixo
+            tecnológico-profissionalizante e um eixo
+            prático-operacional.<br /><br />As práticas jurídicas
+            (judiciais e extrajudiciais) compõem um espaço de extrema
+            importância na integralização curricular. O Curso de Direito
+            da Finom oferece aos seus graduandos a oportunidade de
+            estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+            ainda mais o aprendizado da sala de aula com o exercício da
+            advocacia.
+          </p>
+          <h2><a href="#">Página do Curso</a></h2>
+        </div>
+      </div>
+    </label>
+            </div>
+            <!-- MEDICINA VETERINÁRIA -->
+            <div>
+              <label>
+                <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+                <div class="flip-card">
+                  <div class="front">
+                    <div class="front-header">
+                      <span>
+                        <h1>Medicina Veterinária</h1>
+                      </span>
+                      <span>
+                        <h1><i class="far fa-clock"></i> 5 anos</h1>
+                      </span>
+          
+                      <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                      <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                    </div>
+          
+                    <div class="front-footer">
+                      <h1>Leia mais</h1>
+                      <ul>
+                        <li>
+                          <h3>
+                            <i class="fas fa-users icone-front-footer"></i><br />50
+                            Vagas
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                          </h3>
+                        </li>
+                        <li>
+                          <h3>
+                            <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                          </h3>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                  <div class="back">
+                    <div>
+                      <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                    </div>
+                    <h2>Sobre o curso:</h2>
+                    <p>
+                      O curso propõe uma abordagem investigativa dos conteúdos, de
+                      modo a envolver os acadêmicos no estudo crítico do saber
+                      jurídico instituído.<br /><br />A grade curricular contempla
+                      um conjunto de conteúdos de formação geral, um eixo
+                      tecnológico-profissionalizante e um eixo
+                      prático-operacional.<br /><br />As práticas jurídicas
+                      (judiciais e extrajudiciais) compõem um espaço de extrema
+                      importância na integralização curricular. O Curso de Direito
+                      da Finom oferece aos seus graduandos a oportunidade de
+                      estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                      ainda mais o aprendizado da sala de aula com o exercício da
+                      advocacia.
+                    </p>
+                    <h2><a href="#">Página do Curso</a></h2>
+                  </div>
+                </div>
+              </label>
+            </div>
+        </div>
+        <button class="accordion"><div class="accordion-title"><i class="fas fa-heartbeat accordion-icon accordion-icon"></i>Cursos da Saúde</div><div class="accordioncursos">4 Cursos</div></button>
+        <div class="panel grid-card-wrapper"> <!-- SÁUDE -->
+            <!-- BIOMEDICINA -->
+            <div>
             <label>
-              <input class="card-input" type="checkbox" />
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
               <div class="flip-card">
                 <div class="front">
                   <div class="front-header">
@@ -510,217 +712,16 @@
                 </div>
               </div>
             </label>
-          </div>
-  
-          <!-- ENFERMAGEM -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Enfermagem</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- GEOLOGIA -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Geologia</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- ENG.TELECOM -->
-          <div>
-            <!-- ENG. TELE -->
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Eng. Telecom</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- ENG.QUIMICA -->
-          <div>
-                      <!-- ENG. QUI -->
+            </div>
+            <!-- ENFERMAGEM -->
+            <div>
                       <label>
-                        <input class="card-input" type="checkbox" />
+                        <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
                         <div class="flip-card">
                           <div class="front">
                             <div class="front-header">
                               <span>
-                                <h1>Eng. Quimica</h1>
+                                <h1>Enfermagem</h1>
                               </span>
                               <span>
                                 <h1><i class="far fa-clock"></i> 5 anos</h1>
@@ -776,408 +777,79 @@
                           </div>
                         </div>
                       </label>
-          </div>
-  
-          <!-- FISIOTERAPIA -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Fisioterapia</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- ENG.CIVIL -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Eng. Civil</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- ENG.PRODUÇÃO -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Eng. Produção</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- ENG.MINAS -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Eng. Minas</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- GEOFRAGIA -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Geografia</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Licenciatura
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-globe-americas icone-front-footer"></i></i><br />EAD
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- HISTÓRIA -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Historia</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Licenciatura
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-globe-americas icone-front-footer"></i></i><br />EAD
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
+            </div>
+            <!-- FISIOTERAPIA -->
+            <div>
+                      <label>
+                        <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+                        <div class="flip-card">
+                          <div class="front">
+                            <div class="front-header">
+                              <span>
+                                <h1>Fisioterapia</h1>
+                              </span>
+                              <span>
+                                <h1><i class="far fa-clock"></i> 5 anos</h1>
+                              </span>
+            
+                              <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                              <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                            </div>
+            
+                            <div class="front-footer">
+                              <h1>Leia mais</h1>
+                              <ul>
+                                <li>
+                                  <h3>
+                                    <i class="fas fa-users icone-front-footer"></i><br />50
+                                    Vagas
+                                  </h3>
+                                </li>
+                                <li>
+                                  <h3>
+                                    <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                                  </h3>
+                                </li>
+                                <li>
+                                  <h3>
+                                    <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                                  </h3>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+            
+                          <div class="back">
+                            <div>
+                              <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                            </div>
+                            <h2>Sobre o curso:</h2>
+                            <p>
+                              O curso propõe uma abordagem investigativa dos conteúdos, de
+                              modo a envolver os acadêmicos no estudo crítico do saber
+                              jurídico instituído.<br /><br />A grade curricular contempla
+                              um conjunto de conteúdos de formação geral, um eixo
+                              tecnológico-profissionalizante e um eixo
+                              prático-operacional.<br /><br />As práticas jurídicas
+                              (judiciais e extrajudiciais) compõem um espaço de extrema
+                              importância na integralização curricular. O Curso de Direito
+                              da Finom oferece aos seus graduandos a oportunidade de
+                              estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                              ainda mais o aprendizado da sala de aula com o exercício da
+                              advocacia.
+                            </p>
+                            <h2><a href="#">Página do Curso</a></h2>
+                          </div>
+                        </div>
+                      </label>
+            </div>
+        </div>
+        <button class="accordion"><div class="accordion-title"><i class="fas fa-book-open accordion-icon accordion-icon"></i>Cursos da Educação</div><div class="accordioncursos">3 Cursos</div></button>
+        <div class="panel grid-card-wrapper"> <!-- EDUCAÇÃO -->
           <!-- PEDAGOGIA -->
           <div>
             <label>
-              <input class="card-input" type="checkbox" />
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
               <div class="flip-card">
                 <div class="front">
                   <div class="front-header">
@@ -1239,16 +911,410 @@
               </div>
             </label>
           </div>
-  
-          <!-- CIÊNCIAS CONTÁBEIS -->
+          <!-- HISTÓRIA -->
           <div>
             <label>
-              <input class="card-input" type="checkbox" />
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
               <div class="flip-card">
                 <div class="front">
                   <div class="front-header">
                     <span>
-                      <h1>Ciências Contábeis</h1>
+                      <h1>Historia</h1>
+                    </span>
+                    <span>
+                      <h1><i class="far fa-clock"></i> 5 anos</h1>
+                    </span>
+  
+                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                  </div>
+  
+                  <div class="front-footer">
+                    <h1>Leia mais</h1>
+                    <ul>
+                      <li>
+                        <h3>
+                          <i class="fas fa-users icone-front-footer"></i><br />50
+                          Vagas
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Licenciatura
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-globe-americas icone-front-footer"></i></i><br />EAD
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="back">
+                  <div>
+                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                  </div>
+                  <h2>Sobre o curso:</h2>
+                  <p>
+                    O curso propõe uma abordagem investigativa dos conteúdos, de
+                    modo a envolver os acadêmicos no estudo crítico do saber
+                    jurídico instituído.<br /><br />A grade curricular contempla
+                    um conjunto de conteúdos de formação geral, um eixo
+                    tecnológico-profissionalizante e um eixo
+                    prático-operacional.<br /><br />As práticas jurídicas
+                    (judiciais e extrajudiciais) compõem um espaço de extrema
+                    importância na integralização curricular. O Curso de Direito
+                    da Finom oferece aos seus graduandos a oportunidade de
+                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                    ainda mais o aprendizado da sala de aula com o exercício da
+                    advocacia.
+                  </p>
+                  <h2><a href="#">Página do Curso</a></h2>
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- GEOFRAGIA -->
+          <div>
+            <label>
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+              <div class="flip-card">
+                <div class="front">
+                  <div class="front-header">
+                    <span>
+                      <h1>Geografia</h1>
+                    </span>
+                    <span>
+                      <h1><i class="far fa-clock"></i> 5 anos</h1>
+                    </span>
+  
+                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                  </div>
+  
+                  <div class="front-footer">
+                    <h1>Leia mais</h1>
+                    <ul>
+                      <li>
+                        <h3>
+                          <i class="fas fa-users icone-front-footer"></i><br />50
+                          Vagas
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Licenciatura
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-globe-americas icone-front-footer"></i></i><br />EAD
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="back">
+                  <div>
+                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                  </div>
+                  <h2>Sobre o curso:</h2>
+                  <p>
+                    O curso propõe uma abordagem investigativa dos conteúdos, de
+                    modo a envolver os acadêmicos no estudo crítico do saber
+                    jurídico instituído.<br /><br />A grade curricular contempla
+                    um conjunto de conteúdos de formação geral, um eixo
+                    tecnológico-profissionalizante e um eixo
+                    prático-operacional.<br /><br />As práticas jurídicas
+                    (judiciais e extrajudiciais) compõem um espaço de extrema
+                    importância na integralização curricular. O Curso de Direito
+                    da Finom oferece aos seus graduandos a oportunidade de
+                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                    ainda mais o aprendizado da sala de aula com o exercício da
+                    advocacia.
+                  </p>
+                  <h2><a href="#">Página do Curso</a></h2>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="accordion"><div class="accordion-title"><i class="fas fa-calculator accordion-icon accordion-icon"></i>Cursos da Engenharia</div><div class="accordioncursos">7 Cursos</div></button>
+        <div class="panel grid-card-wrapper"> <!-- ENGENHARIAS -->
+          <!-- ENG.TELECOM -->
+          <div>
+            <!-- ENG. TELE -->
+            <label>
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+              <div class="flip-card">
+                <div class="front">
+                  <div class="front-header">
+                    <span>
+                      <h1>Eng. Telecom</h1>
+                    </span>
+                    <span>
+                      <h1><i class="far fa-clock"></i> 5 anos</h1>
+                    </span>
+  
+                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                  </div>
+  
+                  <div class="front-footer">
+                    <h1>Leia mais</h1>
+                    <ul>
+                      <li>
+                        <h3>
+                          <i class="fas fa-users icone-front-footer"></i><br />50
+                          Vagas
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="back">
+                  <div>
+                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                  </div>
+                  <h2>Sobre o curso:</h2>
+                  <p>
+                    O curso propõe uma abordagem investigativa dos conteúdos, de
+                    modo a envolver os acadêmicos no estudo crítico do saber
+                    jurídico instituído.<br /><br />A grade curricular contempla
+                    um conjunto de conteúdos de formação geral, um eixo
+                    tecnológico-profissionalizante e um eixo
+                    prático-operacional.<br /><br />As práticas jurídicas
+                    (judiciais e extrajudiciais) compõem um espaço de extrema
+                    importância na integralização curricular. O Curso de Direito
+                    da Finom oferece aos seus graduandos a oportunidade de
+                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                    ainda mais o aprendizado da sala de aula com o exercício da
+                    advocacia.
+                  </p>
+                  <h2><a href="#">Página do Curso</a></h2>
+                </div>
+              </div>
+            </label>
+          </div>  
+          <!-- ENG.QUIMICA -->
+          <div>
+                      <!-- ENG. QUI -->
+                      <label>
+                        <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+                        <div class="flip-card">
+                          <div class="front">
+                            <div class="front-header">
+                              <span>
+                                <h1>Eng. Quimica</h1>
+                              </span>
+                              <span>
+                                <h1><i class="far fa-clock"></i> 5 anos</h1>
+                              </span>
+            
+                              <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                              <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                            </div>
+            
+                            <div class="front-footer">
+                              <h1>Leia mais</h1>
+                              <ul>
+                                <li>
+                                  <h3>
+                                    <i class="fas fa-users icone-front-footer"></i><br />50
+                                    Vagas
+                                  </h3>
+                                </li>
+                                <li>
+                                  <h3>
+                                    <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                                  </h3>
+                                </li>
+                                <li>
+                                  <h3>
+                                    <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                                  </h3>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+            
+                          <div class="back">
+                            <div>
+                              <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                            </div>
+                            <h2>Sobre o curso:</h2>
+                            <p>
+                              O curso propõe uma abordagem investigativa dos conteúdos, de
+                              modo a envolver os acadêmicos no estudo crítico do saber
+                              jurídico instituído.<br /><br />A grade curricular contempla
+                              um conjunto de conteúdos de formação geral, um eixo
+                              tecnológico-profissionalizante e um eixo
+                              prático-operacional.<br /><br />As práticas jurídicas
+                              (judiciais e extrajudiciais) compõem um espaço de extrema
+                              importância na integralização curricular. O Curso de Direito
+                              da Finom oferece aos seus graduandos a oportunidade de
+                              estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                              ainda mais o aprendizado da sala de aula com o exercício da
+                              advocacia.
+                            </p>
+                            <h2><a href="#">Página do Curso</a></h2>
+                          </div>
+                        </div>
+                      </label>
+          </div>  
+          <!-- ENG.CIVIL -->
+          <div>
+            <label>
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+              <div class="flip-card">
+                <div class="front">
+                  <div class="front-header">
+                    <span>
+                      <h1>Eng. Civil</h1>
+                    </span>
+                    <span>
+                      <h1><i class="far fa-clock"></i> 5 anos</h1>
+                    </span>
+  
+                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                  </div>
+  
+                  <div class="front-footer">
+                    <h1>Leia mais</h1>
+                    <ul>
+                      <li>
+                        <h3>
+                          <i class="fas fa-users icone-front-footer"></i><br />50
+                          Vagas
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="back">
+                  <div>
+                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                  </div>
+                  <h2>Sobre o curso:</h2>
+                  <p>
+                    O curso propõe uma abordagem investigativa dos conteúdos, de
+                    modo a envolver os acadêmicos no estudo crítico do saber
+                    jurídico instituído.<br /><br />A grade curricular contempla
+                    um conjunto de conteúdos de formação geral, um eixo
+                    tecnológico-profissionalizante e um eixo
+                    prático-operacional.<br /><br />As práticas jurídicas
+                    (judiciais e extrajudiciais) compõem um espaço de extrema
+                    importância na integralização curricular. O Curso de Direito
+                    da Finom oferece aos seus graduandos a oportunidade de
+                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                    ainda mais o aprendizado da sala de aula com o exercício da
+                    advocacia.
+                  </p>
+                  <h2><a href="#">Página do Curso</a></h2>
+                </div>
+              </div>
+            </label>
+          </div>  
+          <!-- ENG.PRODUÇÃO -->
+          <div>
+            <label>
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+              <div class="flip-card">
+                <div class="front">
+                  <div class="front-header">
+                    <span>
+                      <h1>Eng. Produção</h1>
+                    </span>
+                    <span>
+                      <h1><i class="far fa-clock"></i> 5 anos</h1>
+                    </span>
+  
+                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
+                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
+                  </div>
+  
+                  <div class="front-footer">
+                    <h1>Leia mais</h1>
+                    <ul>
+                      <li>
+                        <h3>
+                          <i class="fas fa-users icone-front-footer"></i><br />50
+                          Vagas
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
+                        </h3>
+                      </li>
+                      <li>
+                        <h3>
+                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="back">
+                  <div>
+                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
+                  </div>
+                  <h2>Sobre o curso:</h2>
+                  <p>
+                    O curso propõe uma abordagem investigativa dos conteúdos, de
+                    modo a envolver os acadêmicos no estudo crítico do saber
+                    jurídico instituído.<br /><br />A grade curricular contempla
+                    um conjunto de conteúdos de formação geral, um eixo
+                    tecnológico-profissionalizante e um eixo
+                    prático-operacional.<br /><br />As práticas jurídicas
+                    (judiciais e extrajudiciais) compõem um espaço de extrema
+                    importância na integralização curricular. O Curso de Direito
+                    da Finom oferece aos seus graduandos a oportunidade de
+                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
+                    ainda mais o aprendizado da sala de aula com o exercício da
+                    advocacia.
+                  </p>
+                  <h2><a href="#">Página do Curso</a></h2>
+                </div>
+              </div>
+            </label>
+          </div>  
+          <!-- ENG.MINAS -->
+          <div>
+            <label>
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
+              <div class="flip-card">
+                <div class="front">
+                  <div class="front-header">
+                    <span>
+                      <h1>Eng. Minas</h1>
                     </span>
                     <span>
                       <h1><i class="far fa-clock"></i> 5 anos</h1>
@@ -1305,11 +1371,10 @@
               </div>
             </label>
           </div>
-  
           <!-- ENG.AGRIMENSURA -->
           <div>
             <label>
-              <input class="card-input" type="checkbox" />
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
               <div class="flip-card">
                 <div class="front">
                   <div class="front-header">
@@ -1371,11 +1436,10 @@
               </div>
             </label>
           </div>
-  
-          <!-- ENG.AMBIENTAL E SANITÁRIA -->
+            <!-- ENG.AMBIENTAL E SANITÁRIA -->
           <div>
             <label>
-              <input class="card-input" type="checkbox" />
+              <input class="card-input" name="checkthis" type="checkbox" onclick="onlyOne(this)" />
               <div class="flip-card">
                 <div class="front">
                   <div class="front-header">
@@ -1437,218 +1501,7 @@
               </div>
             </label>
           </div>
-  
-          <!-- ARQUITETURA E URBANISMO -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Arquiteura e Urbanismo</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <!-- MEDICINA VETERINÁRIA -->
-          <div>
-            <label>
-              <input class="card-input" type="checkbox" />
-              <div class="flip-card">
-                <div class="front">
-                  <div class="front-header">
-                    <span>
-                      <h1>Medicina Veterinária</h1>
-                    </span>
-                    <span>
-                      <h1><i class="far fa-clock"></i> 5 anos</h1>
-                    </span>
-  
-                    <img class="img-card-background" src="img/direito_background.jpg" alt="" srcset="" />
-                    <img class="img-card-estudante" src="img/img_section1/even.png" alt="" srcset="" />
-                  </div>
-  
-                  <div class="front-footer">
-                    <h1>Leia mais</h1>
-                    <ul>
-                      <li>
-                        <h3>
-                          <i class="fas fa-users icone-front-footer"></i><br />50
-                          Vagas
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-graduation-cap icone-front-footer"></i><br />Bacharel
-                        </h3>
-                      </li>
-                      <li>
-                        <h3>
-                          <i class="fas fa-moon icone-front-footer"></i><br />Noturno
-                        </h3>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="back">
-                  <div>
-                    <img class="img-card-background2" src="img/direito_background.jpg" alt="" srcset="" />
-                  </div>
-                  <h2>Sobre o curso:</h2>
-                  <p>
-                    O curso propõe uma abordagem investigativa dos conteúdos, de
-                    modo a envolver os acadêmicos no estudo crítico do saber
-                    jurídico instituído.<br /><br />A grade curricular contempla
-                    um conjunto de conteúdos de formação geral, um eixo
-                    tecnológico-profissionalizante e um eixo
-                    prático-operacional.<br /><br />As práticas jurídicas
-                    (judiciais e extrajudiciais) compõem um espaço de extrema
-                    importância na integralização curricular. O Curso de Direito
-                    da Finom oferece aos seus graduandos a oportunidade de
-                    estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                    ainda mais o aprendizado da sala de aula com o exercício da
-                    advocacia.
-                  </p>
-                  <h2><a href="#">Página do Curso</a></h2>
-                </div>
-              </div>
-            </label>
-          </div>
-  
-          <div>
-            <label>
-              <!--  <input type="checkbox" />
-                        <div class="flip-card">
-                          <div class="front">
-                            <div class="front-header">
-                              <span><h1>Medicina Veterinária</h1></span>
-                              <span
-                                ><h1><i class="far fa-clock"></i> 5 anos</h1></span
-                              >
-            
-                              <img
-                                class="img-card-background"
-                                src="img/direito_background.jpg"
-                                alt=""
-                                srcset=""
-                              />
-                              <img
-                                class="img-card-estudante"
-                                src="img/img_section1/even.png"
-                                alt=""
-                                srcset=""
-                              />
-                            </div>
-            
-                            <div class="front-footer">
-                              <h1>Leia mais</h1>
-                              <ul>
-                                <li>
-                                  <h3>
-                                    <i class="fas fa-users icone-front-footer"></i><br />50
-                                    Vagas
-                                  </h3>
-                                </li>
-                                <li>
-                                  <h3>
-                                    <i class="fas fa-graduation-cap icone-front-footer"></i
-                                    ><br />Bacharel
-                                  </h3>
-                                </li>
-                                <li>
-                                  <h3>
-                                    <i class="fas fa-moon icone-front-footer"></i
-                                    ><br />Noturno
-                                  </h3>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-            
-                          <div class="back">
-                            <div>
-                              <img
-                                class="img-card-background2"
-                                src="img/direito_background.jpg"
-                                alt=""
-                                srcset=""
-                              />
-                            </div>
-                            <h2>Sobre o curso:</h2>
-                            <p>
-                              O curso propõe uma abordagem investigativa dos conteúdos, de
-                              modo a envolver os acadêmicos no estudo crítico do saber
-                              jurídico instituído.<br /><br />A grade curricular contempla
-                              um conjunto de conteúdos de formação geral, um eixo
-                              tecnológico-profissionalizante e um eixo
-                              prático-operacional.<br /><br />As práticas jurídicas
-                              (judiciais e extrajudiciais) compõem um espaço de extrema
-                              importância na integralização curricular. O Curso de Direito
-                              da Finom oferece aos seus graduandos a oportunidade de
-                              estagiar no Núcleo de Prática Jurídica (NPJ), estreitando
-                              ainda mais o aprendizado da sala de aula com o exercício da
-                              advocacia.
-                            </p>
-                            <h2><a href="#">Página do Curso</a></h2>
-                          </div>
-                        </div> -->
-            </label>
-          </div>
+
         </div>
       </div>
     </div>
@@ -1663,13 +1516,14 @@
   </div>
   </footer>
 
-  <script>
+  <script src="javascript.js"></script>
+<!--   <script>
     ScrollReveal().reveal(".flip-card", {
       delay: 100,
       interval: 200,
       reset: false,
     });
-  </script>
+  </script> -->
 
 </body>
 </html>
