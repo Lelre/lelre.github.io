@@ -1342,13 +1342,15 @@ label:hover :checked + .flip-card {
   align-content: center;
   align-items: center;
   max-width: 120rem;
-  padding: 0 35px 0 40px;
+  padding: 0 10px 0 10px;
 }
 
 .search-wrapper h2 {
   color: #0077ff;
   padding-left: 10px;
-  border-left: 5px solid #0077ff;
+/*   border-left: 5px solid #0077ff; */
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 .search-wrapper a {
@@ -1425,3 +1427,105 @@ label:hover :checked + .flip-card {
   z-index: -1;
   background-color: #0077ff;
 }
+
+
+#gototop{
+  width: 50px;
+  height: 50px;
+  background-color: #0077ff;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  border-radius: 50px;
+  margin: 5px;
+
+  justify-content: center;
+  align-items: center;
+
+
+  animation: gotoanimation .5s forwards;
+}
+
+#gototop a{
+  color: white;
+  font-size: 3rem;
+  padding: 5px;
+}
+
+@keyframes gotoanimation {
+  from {
+    opacity: 0;
+  }
+  top{
+    opacity: 1;
+  }
+}
+
+.accordion{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion:hover{
+  background-color: rgb(218, 216, 216);
+  transition: .5s;
+}
+
+.accordion.active{
+  background-color: rgb(218, 216, 216);
+}
+
+.accordion-icon{
+  margin-right: 20px;
+  color: #0077ff;
+  font-size: 3rem;
+}
+
+.accordion-icon2{
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.accordion-title{
+  display: flex;
+  align-items: center;
+}
+
+.panel{
+  display: none;
+}
+
+div.active{
+  display: grid;
+  animation: slideAccordionDown .5s forwards;
+}
+
+@keyframes slideAccordionDown {
+  from{
+    opacity: 0;
+    max-height: 0;
+
+  }
+  to{
+    max-height: 1800px;
+    opacity: 1;
+
+  }
+}
+
+
