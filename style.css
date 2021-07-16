@@ -1342,7 +1342,7 @@ label:hover :checked + .flip-card {
   align-content: center;
   align-items: center;
   max-width: 120rem;
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 10px;
 }
 
 .search-wrapper h2 {
@@ -1496,11 +1496,6 @@ label:hover :checked + .flip-card {
   font-size: 3rem;
 }
 
-.accordion-icon2{
-  margin-right: 10px;
-  font-size: 1.5rem;
-}
-
 .accordion-title{
   display: flex;
   align-items: center;
@@ -1528,4 +1523,19 @@ div.active{
   }
 }
 
+.accordion-stats::before{
+  content: "\f070";
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+}
 
+.accordion-stats.active::before{
+  content: "\f06e";
+  color: #0077ff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+}
