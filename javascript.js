@@ -22,21 +22,54 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-function initAccordion() {
-  const activeClass = "active";
-  const accordionList = document.querySelectorAll(".accordion");
+/* function openAccordion(){
+  const accordionList = document.getElementsByClassName("accordion");
+  var i;
 
+
+  for (i = 0; i < accordionList.length; i++) {
+    accordionList[i].addEventListener("click", function() {
+      
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+
+    });
+  }
+}
+openAccordion();
+ */
+
+function initAccordion() {
+  const accordionList = document.querySelectorAll(".accordion");
+  const activeClass = "active";
   if (accordionList.length) {
     accordionList[0].classList.add(activeClass);
     accordionList[0].nextElementSibling.classList.add(activeClass);
 
-    function activeAccordion(accordion) {
-      this.classList.toggle(activeClass);
-      this.nextElementSibling.classList.toggle(activeClass);
+    function disableAccordion() {
+      accordionList.forEach((accordion) => {
+        accordion.classList.remove(activeClass);
+        accordion.nextElementSibling.classList.remove(activeClass);
+      });
+    }
+    function enableAccordion() {
+      accordionList.forEach((accordion) => {
+        this.classList.add(activeClass);
+        this.nextElementSibling.classList.add(activeClass);
+      });
     }
 
     accordionList.forEach((accordion) => {
-      accordion.addEventListener("click", activeAccordion);
+      accordion.addEventListener("click", disableAccordion);
+    });
+    accordionList.forEach((accordion) => {
+      accordion.addEventListener("click", enableAccordion);
     });
   }
 }
