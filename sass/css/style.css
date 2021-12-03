@@ -1,0 +1,1177 @@
+/* line 24, ../../PCX/sass/scss/_reset.scss */
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* line 28, ../../PCX/sass/scss/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 32, ../../PCX/sass/scss/_reset.scss */
+body {
+  font-size: 1.6rem;
+}
+
+/* line 36, ../../PCX/sass/scss/_reset.scss */
+html, body {
+  overflow-x: visible;
+}
+
+/* line 10, ../../PCX/sass/scss/style.scss */
+#btn-menu,
+.menu-social-mobile {
+  display: none;
+}
+
+/* line 15, ../../PCX/sass/scss/style.scss */
+.pcx-navbar {
+  position: relative;
+}
+
+/* line 18, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav {
+  margin: 0 auto;
+  max-width: 120rem;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  align-items: center;
+  justify-content: space-between;
+  background-color: #013168;
+  -webkit-box-shadow: 0px 25px 40px -20px #00000080;
+  -moz-box-shadow: 0px 25px 40px -20px #00000080;
+  box-shadow: 0px 25px 40px -20px #00000080;
+}
+
+/* line 36, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .logo a {
+  margin-left: 35px;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+/* line 44, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menus {
+  display: flex;
+  align-items: center;
+}
+
+/* line 50, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-base a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: #fff;
+  user-select: none;
+  position: relative;
+}
+
+/* line 58, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-base a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 1.5px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+/* line 70, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-base a:hover::after {
+  width: 100%;
+}
+
+/* line 75, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-base ul {
+  display: flex;
+  align-items: center;
+}
+
+/* line 80, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-base li {
+  padding: 15px 15px;
+  margin: 5px;
+}
+
+/* line 86, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-social {
+  border-left: 1px solid;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* line 91, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-social a {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* line 96, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-social a:hover {
+  color: #ffd700;
+}
+
+/* line 101, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-social ul {
+  display: flex;
+  align-items: center;
+}
+
+/* line 106, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-social li {
+  padding: 10px 0;
+  margin: 5px;
+}
+
+/* line 111, ../../PCX/sass/scss/style.scss */
+.pcx-navbar #nav .menu-social li:last-child {
+  margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  /* line 118, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav {
+    max-width: 90%;
+    height: 80px;
+  }
+  /* line 122, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav .logo a {
+    margin: 0 30px;
+  }
+  /* line 127, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #btn-menu {
+    display: flex;
+    padding: 2.5rem 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  /* line 135, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: absolute;
+    height: 0;
+    right: 0;
+    top: 79px;
+    width: 100%;
+    visibility: hidden;
+    background-color: #013168;
+    padding: 0 3rem;
+    transition: 0.5s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  /* line 152, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu li {
+    padding: 25px 45px;
+    margin: 5px;
+    text-align: left;
+    width: 100%;
+    transition: 0.4s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  /* line 160, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu li a {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    color: #fff;
+    user-select: none;
+    position: relative;
+  }
+  /* line 168, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu li a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 1.5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    z-index: 999;
+    transition: 0.3s;
+  }
+  /* line 180, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu li a:hover::after {
+    width: 100%;
+  }
+  /* line 185, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu li:hover {
+    background-color: #57a5ff;
+  }
+  /* line 191, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav.active-menu #menu {
+    height: calc(95vh - 80px);
+    visibility: visible;
+  }
+  /* line 196, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    color: #fff;
+  }
+  /* line 201, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #hamburguer::after, .pcx-navbar #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  /* line 214, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav.active-menu #hamburguer {
+    border-top-color: transparent;
+  }
+  /* line 217, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav.active-menu #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  /* line 222, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav.active-menu #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  /* line 227, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar .menu-social {
+    display: none;
+  }
+  /* line 231, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar .menu-social-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  /* line 236, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar .menu-social-mobile h1 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  /* line 241, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar .menu-social-mobile li {
+    border-bottom: none !important;
+  }
+  /* line 244, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar .menu-social-mobile li a {
+    font-size: 3.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 252, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav {
+    height: 40px;
+  }
+  /* line 256, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #menu {
+    top: 40px;
+  }
+  /* line 260, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar #nav.active-menu #menu {
+    height: calc(95vh - 80px);
+  }
+  /* line 264, ../../PCX/sass/scss/style.scss */
+  .pcx-navbar .logo a {
+    font-size: 3rem !important;
+  }
+}
+
+/* line 271, ../../PCX/sass/scss/style.scss */
+.pcx-header .for {
+  margin: 0 auto;
+  max-width: 130rem;
+  position: relative;
+  top: -10rem;
+}
+
+/* line 276, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .fform {
+  background-color: #013168;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  z-index: 1;
+  height: 35rem;
+  max-width: 120rem;
+  align-items: flex-end;
+  -webkit-box-shadow: 0px 25px 40px -20px #00000080;
+  -moz-box-shadow: 0px 25px 40px -20px #00000080;
+  box-shadow: 0px 25px 40px -20px #00000080;
+}
+
+/* line 290, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .fform .fform-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4rem 6rem;
+}
+
+/* line 296, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .fform .fform-text h1 {
+  color: #fff;
+  padding-bottom: 1rem;
+  font-size: 5rem;
+}
+
+/* line 302, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .fform .fform-text p {
+  color: #fff;
+}
+
+/* line 307, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .fform .fname,
+.pcx-header .for .fform .fmail,
+.pcx-header .for .fform .fempr,
+.pcx-header .for .fform .fselect {
+  height: 65px;
+  padding-bottom: 15rem;
+}
+
+/* line 314, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .fform .fname #inputname,
+.pcx-header .for .fform .fname #inputmail,
+.pcx-header .for .fform .fname #inputempr,
+.pcx-header .for .fform .fname #inputselect,
+.pcx-header .for .fform .fmail #inputname,
+.pcx-header .for .fform .fmail #inputmail,
+.pcx-header .for .fform .fmail #inputempr,
+.pcx-header .for .fform .fmail #inputselect,
+.pcx-header .for .fform .fempr #inputname,
+.pcx-header .for .fform .fempr #inputmail,
+.pcx-header .for .fform .fempr #inputempr,
+.pcx-header .for .fform .fempr #inputselect,
+.pcx-header .for .fform .fselect #inputname,
+.pcx-header .for .fform .fselect #inputmail,
+.pcx-header .for .fform .fselect #inputempr,
+.pcx-header .for .fform .fselect #inputselect {
+  width: 32rem;
+  height: 5rem;
+  outline: none;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* line 329, ../../PCX/sass/scss/style.scss */
+.pcx-header .for .finfos {
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 99999;
+}
+
+/* line 335, ../../PCX/sass/scss/style.scss */
+.pcx-header .for button {
+  padding: 10px 15px;
+  position: absolute;
+  z-index: 99999;
+  right: 0;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: #57a5ff;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* line 350, ../../PCX/sass/scss/style.scss */
+.pcx-header .con {
+  background: linear-gradient(20deg, #ffffff69 10%, #0077ff);
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: 0px 25px 40px -20px #00000080;
+  position: relative;
+  height: calc(100vh - 67px);
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  /* line 364, ../../PCX/sass/scss/style.scss */
+  .pcx-header .for .fform {
+    max-width: 90% !important;
+    margin: 0 auto;
+    height: 50rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: flex-end;
+  }
+  /* line 373, ../../PCX/sass/scss/style.scss */
+  .pcx-header .for .fform .fname,
+  .pcx-header .for .fform .fmail,
+  .pcx-header .for .fform .fselect {
+    padding-bottom: 0 !important;
+    width: 90% !important;
+  }
+  /* line 380, ../../PCX/sass/scss/style.scss */
+  .pcx-header .for .fform #inputname,
+  .pcx-header .for .fform #inputmail,
+  .pcx-header .for .fform #inputselect {
+    width: 100% !important;
+  }
+}
+
+/* line 393, ../../PCX/sass/scss/style.scss */
+.pcx-infos {
+  position: relative;
+  background: #f5faff;
+}
+
+/* line 397, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos {
+  margin: 0 auto;
+  max-width: 130rem;
+  padding-top: 15rem;
+}
+
+/* line 402, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .info-title h1 {
+  color: #4e4e4e;
+  font-size: 5rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* line 409, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .info-title p {
+  color: #4e4e4e;
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 7rem;
+  user-select: none;
+}
+
+/* line 416, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .info-title p mark {
+  background: none;
+  color: #57a5ff;
+  font-weight: bold;
+}
+
+/* line 424, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px 30px;
+  padding: 0 1rem;
+  grid-auto-flow: row;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card7 card7";
+}
+
+/* line 436, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 {
+  grid-area: card1;
+}
+
+/* line 440, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card2 {
+  grid-area: card2;
+}
+
+/* line 444, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card3 {
+  grid-area: card3;
+}
+
+/* line 448, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card4 {
+  grid-area: card4;
+}
+
+/* line 452, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card5 {
+  grid-area: card5;
+}
+
+/* line 456, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card6 {
+  grid-area: card6;
+}
+
+/* line 460, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card7 {
+  grid-area: card7;
+}
+
+/* line 464, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1,
+.pcx-infos .infos .grid-infos .card2,
+.pcx-infos .infos .grid-infos .card3,
+.pcx-infos .infos .grid-infos .card4,
+.pcx-infos .infos .grid-infos .card5,
+.pcx-infos .infos .grid-infos .card6 {
+  display: flex;
+  width: auto;
+  height: 20rem;
+  padding: 1rem;
+  border-left: 2px solid #57a5ff24;
+  background-size: 200%;
+  transition: 0.3s;
+}
+
+/* line 478, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader {
+  -webkit-box-shadow: 0px 25px 40px -20px #00000080;
+  -moz-box-shadow: 0px 25px 40px -20px #00000080;
+  box-shadow: 0px 25px 40px -20px #00000080;
+  border-radius: 1rem;
+  background-color: #013168;
+  transform: translateY(-1rem);
+  background-position: right;
+  background-image: linear-gradient(to left, #57a5ff, #0077ff, #014696);
+}
+
+/* line 488, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader .icon,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader .icon,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader .icon,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader .icon,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader .icon,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader .icon {
+  animation: bounce-icon 1s infinite alternate;
+}
+
+@keyframes bounce-icon {
+  from {
+    transform: translateY(1rem);
+  }
+  to {
+    transform: translateY(-1rem);
+  }
+}
+
+/* line 501, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader .icon img,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader .icon img,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader .icon img,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader .icon img,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader .icon img,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader .icon img {
+  filter: invert(1);
+}
+
+/* line 507, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader .content p,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader .content p,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader .content p,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader .content p,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader .content p,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader .content p {
+  color: #fff;
+  user-select: none;
+}
+
+/* line 512, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader .content h3,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader .content h3,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader .content h3,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader .content h3,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader .content h3,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader .content h3 {
+  color: #fff;
+  user-select: none;
+}
+
+/* line 517, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader .content .button,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader .content .button,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader .content .button,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader .content .button,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader .content .button,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader .content .button {
+  color: #4e4e4e;
+  visibility: visible;
+  padding: 4rem 1rem;
+  bottom: -11rem;
+  z-index: 999;
+}
+
+/* line 524, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1:hover.cardpcxheader .content .button i,
+.pcx-infos .infos .grid-infos .card2:hover.cardpcxheader .content .button i,
+.pcx-infos .infos .grid-infos .card3:hover.cardpcxheader .content .button i,
+.pcx-infos .infos .grid-infos .card4:hover.cardpcxheader .content .button i,
+.pcx-infos .infos .grid-infos .card5:hover.cardpcxheader .content .button i,
+.pcx-infos .infos .grid-infos .card6:hover.cardpcxheader .content .button i {
+  color: #57a5ff;
+  transform: translateY(2);
+}
+
+/* line 532, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .icon,
+.pcx-infos .infos .grid-infos .card2 .icon,
+.pcx-infos .infos .grid-infos .card3 .icon,
+.pcx-infos .infos .grid-infos .card4 .icon,
+.pcx-infos .infos .grid-infos .card5 .icon,
+.pcx-infos .infos .grid-infos .card6 .icon {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* line 537, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .icon img,
+.pcx-infos .infos .grid-infos .card2 .icon img,
+.pcx-infos .infos .grid-infos .card3 .icon img,
+.pcx-infos .infos .grid-infos .card4 .icon img,
+.pcx-infos .infos .grid-infos .card5 .icon img,
+.pcx-infos .infos .grid-infos .card6 .icon img {
+  width: 10rem;
+  filter: contrast(0.3);
+}
+
+/* line 543, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .content,
+.pcx-infos .infos .grid-infos .card2 .content,
+.pcx-infos .infos .grid-infos .card3 .content,
+.pcx-infos .infos .grid-infos .card4 .content,
+.pcx-infos .infos .grid-infos .card5 .content,
+.pcx-infos .infos .grid-infos .card6 .content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-left: 1px solid #f5faff26;
+}
+
+/* line 551, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .content p,
+.pcx-infos .infos .grid-infos .card2 .content p,
+.pcx-infos .infos .grid-infos .card3 .content p,
+.pcx-infos .infos .grid-infos .card4 .content p,
+.pcx-infos .infos .grid-infos .card5 .content p,
+.pcx-infos .infos .grid-infos .card6 .content p {
+  color: #4e4e4e;
+}
+
+/* line 555, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .content h3,
+.pcx-infos .infos .grid-infos .card2 .content h3,
+.pcx-infos .infos .grid-infos .card3 .content h3,
+.pcx-infos .infos .grid-infos .card4 .content h3,
+.pcx-infos .infos .grid-infos .card5 .content h3,
+.pcx-infos .infos .grid-infos .card6 .content h3 {
+  padding-bottom: 1rem;
+  color: #4e4e4e;
+}
+
+/* line 560, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .content .button,
+.pcx-infos .infos .grid-infos .card2 .content .button,
+.pcx-infos .infos .grid-infos .card3 .content .button,
+.pcx-infos .infos .grid-infos .card4 .content .button,
+.pcx-infos .infos .grid-infos .card5 .content .button,
+.pcx-infos .infos .grid-infos .card6 .content .button {
+  position: absolute;
+  bottom: -50px;
+  cursor: pointer;
+  right: 0;
+  color: #4e4e4e;
+  padding: 3rem 1rem 1rem 13rem;
+  visibility: hidden;
+}
+
+/* line 569, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card1 .content .button i,
+.pcx-infos .infos .grid-infos .card2 .content .button i,
+.pcx-infos .infos .grid-infos .card3 .content .button i,
+.pcx-infos .infos .grid-infos .card4 .content .button i,
+.pcx-infos .infos .grid-infos .card5 .content .button i,
+.pcx-infos .infos .grid-infos .card6 .content .button i {
+  font-size: 1rem;
+}
+
+/* line 576, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card7 {
+  grid-area: card7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  height: 10rem;
+  padding-top: 5rem;
+}
+
+/* line 585, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card7 #talk-to-us-infos {
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: #013168;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 595, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card7 #ill-get-in-touch {
+  cursor: pointer;
+  padding: 1.5rem;
+  outline: none;
+  background-color: #fff;
+  color: #4e4e4e;
+  border-radius: 5px;
+  border: 0.5px solid #013168;
+  transition: 0.3s;
+  background: none;
+}
+
+/* line 606, ../../PCX/sass/scss/style.scss */
+.pcx-infos .infos .grid-infos .card7 #ill-get-in-touch:hover {
+  background-color: #013168;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  /* line 617, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .info-title {
+    padding: 0 1rem;
+  }
+  /* line 620, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .info-title p {
+    font-size: 4rem !important;
+  }
+  /* line 625, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos {
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6" "card7 card7" !important;
+    padding: 0 1rem;
+  }
+  /* line 633, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card1 {
+    grid-area: card1;
+  }
+  /* line 637, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card2 {
+    grid-area: card2;
+  }
+  /* line 641, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card3 {
+    grid-area: card3;
+  }
+  /* line 645, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card4 {
+    grid-area: card4;
+  }
+  /* line 649, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card5 {
+    grid-area: card5;
+  }
+  /* line 653, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card6 {
+    grid-area: card6;
+  }
+  /* line 657, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card7 {
+    grid-area: card7;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 664, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .info-title {
+    padding: 0 1rem;
+  }
+  /* line 667, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .info-title p {
+    font-size: 3rem !important;
+  }
+  /* line 672, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos {
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" !important;
+    padding: 0 1rem;
+  }
+  /* line 683, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card1 {
+    grid-area: card1;
+  }
+  /* line 687, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card2 {
+    grid-area: card2;
+  }
+  /* line 691, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card3 {
+    grid-area: card3;
+  }
+  /* line 695, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card4 {
+    grid-area: card4;
+  }
+  /* line 699, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card5 {
+    grid-area: card5;
+  }
+  /* line 703, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card6 {
+    grid-area: card6;
+  }
+  /* line 707, ../../PCX/sass/scss/style.scss */
+  .pcx-infos .grid-infos .card7 {
+    grid-area: card7;
+  }
+}
+
+/* line 714, ../../PCX/sass/scss/style.scss */
+.pcx-comp {
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+/* line 717, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15rem 1rem;
+  justify-content: space-between;
+}
+
+/* line 724, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp {
+  height: 65rem;
+}
+
+/* line 728, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .info-title h1 {
+  display: none;
+  font-size: 5rem;
+  color: #4e4e4e;
+}
+
+/* line 734, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .info-title p {
+  width: 60rem;
+  font-size: 4rem;
+  color: #4e4e4e;
+}
+
+/* line 738, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .info-title p mark {
+  background: none;
+  color: #57a5ff;
+}
+
+/* line 745, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper {
+  width: 60rem;
+}
+
+/* line 748, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.4s;
+  display: flex;
+  left: 26rem;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, 50%);
+}
+
+/* line 772, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .accordion .accordion-icon {
+  color: #0077ff;
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+/* line 778, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .accordion.active,
+.pcx-comp .comp .left-comp .accordion-wrapper .accordion .accordion:hover {
+  background-color: #ccc;
+  box-shadow: 0px 20px 40px -20px #00000050;
+}
+
+/* line 784, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .accordion i {
+  color: #4e4e4e;
+}
+
+/* line 789, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* line 796, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .panel label {
+  display: block;
+  position: relative;
+  /* margin: 0 auto; */
+  padding-top: 50px;
+  width: 50rem;
+  /* height: 550px; */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* line 806, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .panel label input {
+  display: none;
+}
+
+/* line 810, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .left-comp .accordion-wrapper .panel label p {
+  color: #4e4e4e;
+}
+
+/* line 818, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* line 824, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .video-player {
+  padding: 2rem;
+  position: relative;
+}
+
+/* line 828, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .video-player .pulse {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+/* line 843, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .video-player .pulse .icon-play {
+  font-size: 5rem;
+  color: #57a5ff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+/* line 852, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .video-player .pulse::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #57a5ff;
+  position: absolute;
+  border-radius: 50%;
+  background: none;
+  border: 3px solid #fff;
+  z-index: -1;
+  animation: pulseCicle 2s infinite;
+}
+
+/* line 865, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .video-player .pulse::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: #57a5ff;
+  position: absolute;
+  border-radius: 50%;
+  background: none;
+  border: 3px solid #fff;
+  z-index: -1;
+  animation: pulseCicle 2s infinite;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes pulseCicle {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* line 892, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .video-player img {
+  width: 50rem;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 25px 40px -20px #00000080;
+}
+
+/* line 900, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .image-container {
+  width: 540px;
+  height: 650px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 908, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .image-container .img1 img {
+  width: 15rem;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 3%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  animation: moving-img1 4s ease-in-out infinite alternate;
+  opacity: 0.2;
+  border-radius: 5px;
+}
+
+@keyframes moving-img1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5rem);
+  }
+}
+
+/* line 932, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .image-container .img2 img {
+  width: 20rem;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  animation: moving-img2 8s ease-in-out infinite alternate;
+  opacity: 0.2;
+  border-radius: 5px;
+}
+
+@keyframes moving-img2 {
+  0% {
+    transform: translateY(-15rem);
+  }
+  100% {
+    transform: translateY(10rem);
+  }
+}
+
+/* line 956, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .image-container .img3 img {
+  width: 15rem;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  animation: moving-img3 4s ease-in-out infinite alternate;
+  opacity: 0.2;
+  border-radius: 5px;
+}
+
+@keyframes moving-img3 {
+  0% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(-5rem);
+  }
+}
+
+/* line 980, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .image-container .img4 img {
+  width: 25rem;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  animation: moving-img1 8s ease-in-out infinite alternate;
+  opacity: 0.2;
+  border-radius: 5px;
+}
+
+@keyframes moving-img4 {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(5rem);
+  }
+}
+
+/* line 1004, ../../PCX/sass/scss/style.scss */
+.pcx-comp .comp .right-comp .image-container .img5 img {
+  width: 15rem;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  animation: moving-img3 8s ease-in-out infinite alternate;
+  opacity: 0.2;
+  border-radius: 5px;
+}
+
+@keyframes moving-img3 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(15rem);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
