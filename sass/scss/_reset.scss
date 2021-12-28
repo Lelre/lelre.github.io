@@ -26,6 +26,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     @include responsive_font_html;
 }
 
